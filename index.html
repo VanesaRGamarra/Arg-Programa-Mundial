@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+<title>Equipo 9(165)</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="header">
+  <a href="#default" class="logo">Equipo 9</a>
+   <div class="header-right">
+    <a class="active" href="#home">Inicio</a>
+    <a href="#chronology">Historia</a>
+    <a href="#galery">Galeria</a>
+    <a href="#about">Nosotros</a>
+    <a href="#contact">Contacto</a>    
+  </div>
+</div>
+  
+<section class="home" id="home">  
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src=".\img\1978 2.png" style="width:100%">
+  <div class="text">1978</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src=".\img\1986.jpg" style="width:100%">
+  <div class="text">1986</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src=".\img\2022.png" style="width:100%">
+  <div class="text">2022</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="fa fa-star" onclick="currentSlide(1)"></span>
+  <span class="fa fa-star" onclick="currentSlide(2)"></span>
+  <span class="fa fa-star" onclick="currentSlide(3)"></span> 
+</div>
+</section>
+
+<!-- Story Start -->
+<!-- Historia -->
+<section class="chronology" id="chronology"> 
+<div class="timeline">
+    <div class="history left">
+      <div class="item">
+        <h2>1978</h2>
+        <p>El partido decisivo entre Argentina y los Países Bajos se disputó en Buenos Aires en el Estadio Monumental, 
+          el 25 de junio de 1978. A los 38' de juego Mario Kempes ponía el 1-0, pero a pocos minutos de que la final 
+          terminara Dick Nanninga marcó el tanto neerlandés lo que hizo que se disputará un tiempo suplementario. 
+          Al minuto 105 volvió a marcar Mario Kempes y selló el resultado Daniel Bertoni a los 116'.</p>
+      </div>
+    </div>
+    <div class="history right">
+      <div class="item">
+        <h2>1986</h2>
+        <p>La selección era liderada por Diego Armando Maradona y dirigida por Carlos Salvador Bilardo, que llegó a la copa
+          desacreditada por la difícil campaña en las eliminatorias, finalmente obtuvo su segundo título mundial tras vencer 
+          en la final a Alemania Federal por 3-2.</p>
+      </div>
+    </div>
+    <div class="history left">
+      <div class="item">
+        <h2>2022</h2>
+        <p>Fue la décimo octava participación de Argentina. Se convirtió en la selección con más penales otorgados en una edición 
+          (cinco) y Lionel Messi, en el máximo lanzador de penales por falta en la historia del campeonato (seis).</p>
+      </div>
+    </div> 
+  </div>
+
+</section>
+<!-- Story End -->
+
+<!-- Galeria -->
+<section class="galery" id="galery"> 
+<!-- MAIN (Center website) -->
+  <div class="main">
+    <h2>GALERIA</h2>  
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Todos</button>
+      <button class="btn" onclick="filterSelection('grupo')"> Grupo C</button>
+      <button class="btn" onclick="filterSelection('cuartos')"> Cuartos Octavos</button>
+      <button class="btn" onclick="filterSelection('finales')"> Finales</button>
+    </div>
+    
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column grupo">
+        <div class="content">
+          <img src="/w3images/lights.jpg" alt="Argentina México" style="width:100%">
+          <h4>Argentina México</h4>
+          <p>Argentina:2 -  México:0</p>
+        </div>
+      </div>
+      <div class="column grupo">
+        <div class="content">
+        <img src="/w3images/lights.jpg" alt="Polonia Argentina" style="width:100%">
+          <h4>Polonia Argentina</h4>
+          <p>Polonia:0 - Argentina:2</p>
+        </div>
+      </div>
+      <div class="column cuartos">
+        <div class="content">
+        <img src="/w3images/nature.jpg" alt="Argentina Australia" style="width:100%">
+          <h4>Argentina Australia</h4>
+          <p>Argentina:2 - Australia:1</p>
+        </div>
+      </div> 
+      <div class="column cuartos">
+        <div class="content">
+          <img src="/w3images/cars1.jpg" alt="Países Bajos Argentina" style="width:100%">
+          <h4>Países Bajos Argentina</h4>
+          <p>Países Bajos:2(3) - Argentina:2(4)</p>
+        </div>
+      </div>
+      <div class="column finales">
+        <div class="content">
+        <img src="/w3images/cars2.jpg" alt="Argentina Croacia" style="width:100%">
+          <h4>Argentina Croacia</h4>
+          <p>Argentina:3 - Croacia:0</p>
+        </div>
+      </div>
+      <div class="column finales">
+        <div class="content">
+        <img src="/w3images/cars3.jpg" alt="Argentina Francia" style="width:100%">
+          <h4>Argentina Francia</h4>
+          <p>Argentina:3(4) - Francia:3(2)</p>
+        </div>
+      </div>  
+    <!-- END GRID -->
+    </div>
+    
+    <!-- END MAIN -->
+  </div>
+</section>
+<section class="about" id="about">    
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="./img/logo.png" alt="Mike" style="width:100%">
+        <div class="container">
+          <h2>Equipo 9</h2>
+          <p class="title">Argentina Programa 4.0</p>
+          <p>Comisión 165</p>
+          <p>DESARROLLO WEB INICIAL</p>
+          <p>Trabajo Integrador</p>
+          <p>Tecnologías aplicadas:</p>
+          <p class="title">HTML, CSS & JAVASCRIPT</p>     
+        </div>
+      </div>
+    </div>      
+    <div class="column">
+      <div class="card">
+        <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+        <div class="container">
+          <h2>Daniel Brizuela</h2>
+          <p class="title">Desarrollador</p>
+          <p><button class="button">Contacto</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+          <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+          <div class="container">
+            <h2> Fernando Castellano</h2>
+           <p class="title">Contenido Web</p>
+            <p><button class="button">Contacto</button></p>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="./img/VRG.png" alt="Jane" style="width:100%">
+          <div class="container">
+            <h2>Vanesa Gamarra</h2>
+            <p class="title">Diseño Web</p>
+            <p><a class="button" name="personal" value="personal" onclick="location.href='javascript:personal()'">Contacto</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+          <div class="card">
+            <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+            <div class="container">
+              <h2>Lila Scali</h2>
+              <p class="title">Diseño</p>
+              <p><button class="button">Contacto</button></p>
+            </div>
+          </div>
+      </div>   
+      <div class="column">
+        <div class="card">
+            <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+            <div class="container">
+              <h2>Graciela Richetta</h2>
+             <p class="title">CEO & Founder</p>
+              <p><button class="button">Contacto</button></p>
+            </div>
+        </div>
+      </div>   
+  </div>
+</section>
+<div class="footer">
+  <p>Argentina Programa 4.0  |  2023</p>
+</div>
+<script src="./app.js"></script>
+
+</body>
+</html> 
