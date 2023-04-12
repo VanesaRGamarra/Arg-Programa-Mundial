@@ -23,6 +23,7 @@ img {vertical-align: middle;}
   text-decoration: none;
   font-size: 18px; 
   line-height: 25px;
+  border-radius: 10px;
 }
 
 .header a.logo {
@@ -110,7 +111,7 @@ img {vertical-align: middle;}
 }
 
 /* The fas/bullets/indicators */
-.fa {
+.fa-star {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -125,12 +126,12 @@ img {vertical-align: middle;}
 }
 
 /* Fading animation */
-.fade {
-  animation-name: fade;
+.fadeOff {
+  animation-name: fadeOff;
   animation-duration: 1.5s;
 }
 
-@keyframes fade {
+@keyframes fadeOff {
   from {opacity: .4} 
   to {opacity: 1}
 }
@@ -271,6 +272,9 @@ img {vertical-align: middle;}
 
 /* GALERIA */
 /* Center website */
+.galery {
+  background-color: #e2ebf3;
+}
 .main {
   max-width: 1000px;
   margin: auto;
@@ -310,6 +314,11 @@ h1 {
   background-color: white;
   padding: 10px;
   box-shadow: 0 4px 8px 0 #73ACDF;
+  text-align: center;
+  border-radius: 10px;
+}
+.content img {
+  border-radius: 8px;
 }
   
   /* The "show" class is added to the filtered elements */
@@ -335,6 +344,21 @@ h1 {
   color: white;
 }
 
+.ver {
+  text-decoration: none;
+  color: #ddd;
+  background-color: #73ACDF;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 5px;
+}
+.ver:hover {
+  color: #fff;
+  background-color: #0f67b4;
+}
+.mfp-hide {
+  display: none !important;
+}
 
 /* Sobre Nosotros */
 
@@ -371,7 +395,7 @@ h1 {
   color: grey;
 }
 
-.button {
+.card-button {
   border: none;
   outline: 0;
   display: inline-block;
@@ -383,7 +407,7 @@ h1 {
   width: 100%;
 }
 
-.button:hover {
+.card-button:hover {
   background-color: #666;
   color: white;
 }
