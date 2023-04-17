@@ -23,7 +23,6 @@ img {vertical-align: middle;}
   text-decoration: none;
   font-size: 18px; 
   line-height: 25px;
-  border-radius: 10px;
 }
 
 .header a.logo {
@@ -111,7 +110,7 @@ img {vertical-align: middle;}
 }
 
 /* The fas/bullets/indicators */
-.fa-star {
+.fa {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -126,12 +125,12 @@ img {vertical-align: middle;}
 }
 
 /* Fading animation */
-.fadeOff {
-  animation-name: fadeOff;
+.fade {
+  animation-name: fade;
   animation-duration: 1.5s;
 }
 
-@keyframes fadeOff {
+@keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
@@ -272,9 +271,6 @@ img {vertical-align: middle;}
 
 /* GALERIA */
 /* Center website */
-.galery {
-  background-color: #e2ebf3;
-}
 .main {
   max-width: 1000px;
   margin: auto;
@@ -314,11 +310,6 @@ h1 {
   background-color: white;
   padding: 10px;
   box-shadow: 0 4px 8px 0 #73ACDF;
-  text-align: center;
-  border-radius: 10px;
-}
-.content img {
-  border-radius: 8px;
 }
   
   /* The "show" class is added to the filtered elements */
@@ -344,21 +335,6 @@ h1 {
   color: white;
 }
 
-.ver {
-  text-decoration: none;
-  color: #ddd;
-  background-color: #73ACDF;
-  border-radius: 10px;
-  font-size: 12px;
-  padding: 5px;
-}
-.ver:hover {
-  color: #fff;
-  background-color: #0f67b4;
-}
-.mfp-hide {
-  display: none !important;
-}
 
 /* Sobre Nosotros */
 
@@ -368,6 +344,7 @@ h1 {
   width: 33.3%;
   margin-bottom: 16px;
   padding: 0 8px;
+ 
 }
 
 @media screen and (max-width: 650px) {
@@ -395,7 +372,7 @@ h1 {
   color: grey;
 }
 
-.card-button {
+.button {
   border: none;
   outline: 0;
   display: inline-block;
@@ -407,7 +384,7 @@ h1 {
   width: 100%;
 }
 
-.card-button:hover {
+.button:hover {
   background-color: #666;
   color: white;
 }
@@ -417,4 +394,74 @@ h1 {
   color: white;
   padding: 10px;
   text-align: center;
+}
+/* Contacto */
+/* Style all input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+input[type=text], select, textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #73ACDF;
+  color: white;
+}
+
+/* Style the container for inputs */
+.container {
+ margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 40%;
+  min-width: 300px;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
 }
